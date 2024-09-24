@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Card, Button } from 'react-bootstrap';
 
-// Datos de ejemplo para los productos
 const items = [
   { id: 1, name: 'Item 1', description: 'Detailed description for Item 1', price: '$10', imageUrl: 'https://via.placeholder.com/150' },
   { id: 2, name: 'Item 2', description: 'Detailed description for Item 2', price: '$20', imageUrl: 'https://via.placeholder.com/150' },
