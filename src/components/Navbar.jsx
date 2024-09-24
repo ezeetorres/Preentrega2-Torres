@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-// Aquí defines las categorías
+
 const categories = [
   { id: 'plata', name: 'Plata' },
   { id: 'oro', name: 'Oro' },

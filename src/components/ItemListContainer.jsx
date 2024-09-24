@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
-// Datos de ejemplo para los productos
 const allItems = [
   { id: 1, name: 'Cadena de plata', description: 'Esta chain es una de las estrellas dentro del universo Don Rouch. Es el emblema que se luce en su máxima expresión, y se conecta a lo más profundo de nuestra filosofía a través de la cadena, para que siempre sientas que 0800 DR te escucha y está cerca tuyo.', price: '$25', imageUrl: 'https://www.0800donrouch.com.ar/images/527/CHAIN_DE_ROQUE_PLATA_0800_DON_ROUCH2022-07-13-11-02-14am.jpg', category: 'plata' },
   { id: 2, name: 'Cadena de oro', description: 'Esta chain es una de las estrellas dentro del universo Don Rouch. Es el emblema que se luce en su máxima expresión, y se conecta a lo más profundo de nuestra filosofía a través de la cadena, para que siempre sientas que 0800 DR te escucha y está cerca tuyo.', price: '$125', imageUrl: 'https://www.0800donrouch.com/images/650/CHAIN_DE_ROQUE_ORO_0800_DON_ROUCH2022-07-13-10-47-56am.png', category: 'oro' },
@@ -15,7 +14,6 @@ const allItems = [
 function ItemListContainer() {
   const { categoryId } = useParams();
 
-  // Filtra los ítems según la categoría seleccionada
   const items = categoryId
     ? allItems.filter(item => item.category === categoryId)
     : allItems;
